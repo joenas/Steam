@@ -104,7 +104,7 @@ article.preview,
 a.archive-link,
 .article-nav {
   margin: 20px auto;
-  max-width: 630px;
+  max-width: 50em;
   width: 90%;
 }
 #site-head img {
@@ -119,13 +119,28 @@ article.preview p.readmore {
   text-transform: uppercase;
   font-weight: 400;
 }
+
 /* === Header === */
+header img {
+  margin-top: 80px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: -50px;
+  margin-right: 16px;
+  width: 30px;
+  height: 55px;
+}
+
+
 h1.blog-title {
   font-size: 50px;
   line-height: 52px;
   margin-top: 80px;
   margin-bottom: 5px;
   padding: 0;
+  // display: inline;
+  // vertical-align: middle;
+
 }
 h1.blog-subtitle {
   font-size: 26px;
@@ -223,6 +238,7 @@ blockquote {
 .tags {
   font-size: 16px;
   margin-bottom: 0.5em;
+  float: right;
 }
 div.authorimage {
   width: 80px;
@@ -281,7 +297,7 @@ footer section {
   font-weight: 300;
   font-size: 18px;
   margin: 0 auto;
-  max-width: 630px;
+  max-width: 50em;
   text-transform: uppercase;
   width: 90%;
 }
@@ -296,7 +312,7 @@ nav {
   border-top: 1px solid #ecf0f1;
   text-align: center;
   margin: -1.6em auto 2em auto;
-  max-width: 630px;
+  max-width: 50em;
 }
 nav ul {
   list-style: none;
@@ -359,7 +375,7 @@ a.archive-link {
 .pagination {
   position: relative;
   width: 100%;
-  max-width: 630px;
+  max-width: 50em;
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
@@ -453,11 +469,14 @@ table tfoot {
 
 
 /* === Custom Overrides === */
+section.post-content h2 {
+  color: #0D7BB2;
+}
+
 section.post-content h2,
 section.post-content h3,
 section.post-content h4 {
   margin-top: 33px;
-  margin-bottom: -6px;
 }
 section.post-content h4 {
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
@@ -491,12 +510,12 @@ blockquote p {
   margin-bottom: 30px;
 }
 
-section.post-content ul {
-  list-style:square;
-}
-section.post-content li {
-  margin: 10px;
-}
+// section.post-content ul {
+//   list-style:square;
+// }
+// section.post-content li {
+//   margin: 10px;
+// }
 
 .tags {
   text-align: right;
@@ -593,10 +612,11 @@ section.author .meta a {
 h3.posts-tagged {
   margin: -0.5em auto 0;
   text-align: center;
-  max-width: 630px;
+  max-width: 50em;
   font-family: "Open Sans Condensed", sans-serif;
   color: #596364;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 16px;
 }
+
