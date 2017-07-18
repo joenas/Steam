@@ -37,6 +37,7 @@
 <body class="{{body_class}}">
 
     <header id="site-head">
+        {{!-- <img src="{{asset "img/og-image-sm.png"}}" alt="{{@blog.title}}" /> --}}
         <h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
         <h1 class="blog-subtitle">{{@blog.description}}</h1>
     </header>
@@ -48,9 +49,9 @@
     <footer class="site-footer">
         <div class="inner">
             {{> footer-social}}
-            {{> footer-author}}
             <section class="copyright">&copy; {{date format="YYYY"}} <a href="{{@blog.url}}">{{@blog.title}}</a>. All rights reserved</section>
             <section class="theme"><a href="https://github.com/epistrephein/Steam">Steam theme</a> by Tommaso Barbato</section>
+            <section class="theme">Logo by <a href="http://josef.sh" title="josef.sh">Josef</a></li></section>
         </div>
     </footer>
 
