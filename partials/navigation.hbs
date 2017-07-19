@@ -1,5 +1,5 @@
 {{#if @blog.navigation}}
-    <nav class="menu" role="nav">
+    <nav class="menu" role="navigation">
         <ul>
             {{#foreach navigation}}
                     <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}"><a href="{{url absolute="true"}}">{{label}}</a></li>

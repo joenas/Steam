@@ -1,17 +1,17 @@
 {{!< default}}
-<main class="content" role="main">
+<main class="content">
     {{#foreach posts}}
     <article class="preview">
         <header>
             <h1 class="post-title"><a href="{{url}}">{{{title}}}</a></h1>
             <div class="post-meta">
                 <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
-                {{#if tags}}<div class="tags"><i class="fa fa-fw fa-tags"></i> {{tags}}</div>{{/if}}
+                {{#if tags}}<div class="tags"><span class="fa fa-fw fa-tags"></span> {{tags}}</div>{{/if}}
             </div>
         </header>
         <section class="post-excerpt">
-            <a class="excerptlink" href="{{url}}"><p>{{excerpt words="90"}}&hellip;</p></a>
-            <p class="readmore"><a href="{{url}}">Keep reading <i class="fa fa-angle-double-right" style="padding-left: 5px;"></i></a></p>
+            <p>{{excerpt words="90"}}&hellip;</p>
+            <p class="readmore"><a href="{{url}}">Keep reading <span class="fa fa-angle-double-right" style="padding-left: 5px;"></span></a></p>
         </section>
     </article>
     {{/foreach}}
