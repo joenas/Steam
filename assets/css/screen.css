@@ -250,17 +250,22 @@ div.authorimage {
   margin-right: 17px;
   float: left;
 }
-h1.post-title {
+h2.post-title {
+  margin: 0;
   margin-top: 35px;
+  font-size: 32px;
+  color: #151515;
+  font-family: "Roboto Slab", "Merriweather", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+  font-weight: 400;
 }
-h1.post-title a,
+h2.post-title a,
 h1.blog-title a {
   color: #151515;
   transition: color ease 0.7s;
   -webkit-transition: color ease 0.7s;
 }
-h1.post-title a:focus,
-h1.post-title a:hover,
+h2.post-title a:focus,
+h2.post-title a:hover,
 h1.blog-title a:focus,
 h1.blog-title a:hover {
   /*color: #178b6b;*/
@@ -477,9 +482,6 @@ table tfoot {
 
 
 /* === Custom Overrides === */
-section.post-content h2 {
-  color: #0D7BB2;
-}
 
 section.post-content h2,
 section.post-content h3,
