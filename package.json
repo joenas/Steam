@@ -2,6 +2,16 @@
   "name": "Steam",
   "version": "1.5.0",
   "description": "A clean and minimal theme for Ghost.",
-  "author": "Tommaso Barbato",
-  "homepage": "https://github.com/epistrephein/Steam"
+  "engines": {
+      "ghost": ">=1.0.0"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Tommaso Barbato",
+    "email": "epistrephein@gmail.com",
+    "url": "https://github.com/epistrephein/Steam"
+  },
+  "config": {
+      "posts_per_page": 5
+  }
 }
