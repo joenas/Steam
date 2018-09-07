@@ -1,9 +1,7 @@
-{{#if @blog.navigation}}
-    <nav class="menu">
-        <ul>
-            {{#foreach navigation}}
-                    <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}"><a href="{{url absolute="true"}}">{{label}}</a></li>
-            {{/foreach}}
-        </ul>
-    </nav>
-{{/if}}
+<nav class="menu">
+  <ul>
+  {{#foreach navigation}}
+    <li class="nav-{{slug}}"><a href="{{url absolute="true"}}">{{label}}</a></li>
+  {{/foreach}}
+  </ul>
+</nav>
