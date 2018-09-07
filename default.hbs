@@ -38,12 +38,13 @@
 <body class="{{body_class}}">
 
     <header id="site-head">
+        {{navigation}}
         {{!-- <img src="{{asset "img/og-image-sm.png"}}" alt="{{@blog.title}}" /> --}}
+        {{^if post}}
         <h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
         <h1 class="blog-subtitle">{{@blog.description}}</h1>
+        {{/if}}
     </header>
-
-    {{navigation}}
 
     {{{body}}}
 
