@@ -98,6 +98,7 @@ h1 {
   margin: 0;
   padding: 0;
 }
+
 #site-head,
 article,
 article.preview,
@@ -106,6 +107,9 @@ a.archive-link,
   margin: 20px auto;
   max-width: 50em;
   width: 90%;
+}
+#site-head {
+  margin-top: 4em;
 }
 #site-head img {
   max-width: 100%;
@@ -238,7 +242,6 @@ blockquote {
 .tags {
   font-size: 16px;
   margin-bottom: 0.5em;
-  float: right;
 }
 div.authorimage {
   width: 80px;
@@ -629,3 +632,9 @@ h3.posts-tagged {
   font-size: 16px;
 }
 
+body.page-projects li.nav-projects a,
+body.page-about li.nav-about a,
+body.home-template li.nav-home a
+ {
+  font-weight: bold;
+}
